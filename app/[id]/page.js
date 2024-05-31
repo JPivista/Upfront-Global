@@ -4,7 +4,7 @@ import { Col, Container, Row, Image } from 'react-bootstrap';
 import configData from "../../config.json";
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
-
+4
 // This function fetches data on the server side
 async function fetchPostData(slug) {
     const res = await fetch(`${configData.SERVER_URL_WP}seo-blog?_embed&slug=${slug}`);
@@ -19,7 +19,7 @@ const Post = async ({ params }) => {
     const { id } = params;
     const data = await fetchPostData(id);
 
-    console.log(data)
+    // console.log(data)
 
     if (!data || data.length === 0) {
         return <div>404 - Post not found</div>;

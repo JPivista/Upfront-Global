@@ -40,7 +40,7 @@ const Post = async ({ params }) => {
                         <Container fluid className="g-0" style={{ background: '#f40f34' }}>
                             <Container>
                                 <Row className="g-0 flex-column flex-lg-row">
-                                    <Col className="d-flex flex-column justify-content-center px-2">
+                                    <Col className="d-flex flex-column justify-content-center py-5 ">
                                         <div dangerouslySetInnerHTML={{ __html: post.title.rendered }} className="text-white blog-head fs-1 bogle-medium" />
                                     </Col>
                                 </Row>

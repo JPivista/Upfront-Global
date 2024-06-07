@@ -4,7 +4,8 @@ import { Col, Container, Row, Image } from 'react-bootstrap';
 import configData from "../../config.json";
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
-4
+import Head from 'next/head';
+
 // This function fetches data on the server side
 async function fetchPostData(slug) {
     const res = await fetch(`${configData.SERVER_URL_WP}seo-blog?_embed&slug=${slug}`);
@@ -29,8 +30,10 @@ const Post = async ({ params }) => {
         <div>
             {data.map((post, index) => (
                 <React.Fragment key={index}>
-                    <title>{post.acf.meta_title}</title>
-                    <meta name="description" content={post.acf.meta_description} />
+                    {/* <Head> */}
+                        <title>{post.acf.meta_title}</title>
+                        <meta name="description" content={post.acf.meta_description} />
+                    {/* </Head> */}
                 </React.Fragment>
             ))}
             <Header />

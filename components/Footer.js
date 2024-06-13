@@ -7,6 +7,8 @@ import { usePathname } from 'next/navigation';
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa6";
 import { useState } from 'react';
+import { FaInstagram } from "react-icons/fa";
+
 
 function Footer() {
     const router = usePathname();
@@ -48,6 +50,7 @@ function Footer() {
             <Container className="text-center mt-5">
                 <Link href="https://www.linkedin.com/showcase/upfrontcg/"><FaLinkedin size={30} className="f_social mx-3"/></Link>
                 <Link href="https://twitter.com/UpfrontCG"><FaSquareXTwitter size={30} className="f_social"/></Link>
+                <Link href="https://www.instagram.com/upfront.global/"><FaInstagram size={30} className="f_social mx-3"/></Link>
             </Container>
         </Container>
     )

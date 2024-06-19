@@ -10,6 +10,7 @@ import { useState } from 'react';
 import { FaInstagram } from "react-icons/fa";
 
 
+
 function Footer() {
     const router = usePathname();
 	const [date, setDate] = useState(new Date());
@@ -51,6 +52,7 @@ function Footer() {
                 <Link href="https://www.linkedin.com/showcase/upfrontcg/"><FaLinkedin size={30} className="f_social mx-3"/></Link>
                 <Link href="https://twitter.com/UpfrontCG"><FaSquareXTwitter size={30} className="f_social"/></Link>
                 <Link href="https://www.instagram.com/upfront.global/"><FaInstagram size={30} className="f_social mx-3"/></Link>
+                
             </Container>
         </Container>
     )

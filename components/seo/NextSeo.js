@@ -30,7 +30,7 @@ function NextSeo({ title, description, path, metaImage }) {
         <title>{title}</title>
         <meta name="description" content={description} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="robots" content="index,follow"></meta>
+        <meta name="robots" content="noindex,nofollow"></meta>
         <link rel="icon" href="/images/favicon.ico" />
         <link rel="canonical" href={currentURL} />
         <meta property="og:locale" content="en_US" />
